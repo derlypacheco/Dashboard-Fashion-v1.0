@@ -184,12 +184,16 @@
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
             this.gunaPanel2.Controls.Add(this.pictureBox1);
             this.gunaPanel2.Controls.Add(this.gunaCirclePictureBox1);
+            this.gunaPanel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel2.Location = new System.Drawing.Point(300, 0);
             this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(1000, 108);
             this.gunaPanel2.TabIndex = 1;
+            this.gunaPanel2.DoubleClick += new System.EventHandler(this.gunaPanel2_DoubleClick);
+            this.gunaPanel2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.gunaPanel2_MouseDoubleClick);
+            this.gunaPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gunaPanel2_MouseDown);
             // 
             // gunaCirclePictureBox1
             // 
@@ -216,6 +220,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::Dashboard_Windows_Forms.Properties.Resources.maximizar;
             this.pictureBox1.Location = new System.Drawing.Point(818, 20);
             this.pictureBox1.Name = "pictureBox1";
